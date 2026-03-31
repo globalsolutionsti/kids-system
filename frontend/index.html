@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Kids Check-In</title>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+
+<body>
+
+<h2>🎯 Kids Check-In</h2>
+
+<!-- LOGIN -->
+<div id="login">
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="login()">Ingresar</button>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" style="display:none;">
+  <h3>Dashboard</h3>
+  Activos: <span id="activos">0</span><br>
+  Entregados: <span id="entregados">0</span>
+</div>
+
+<!-- SCANNER -->
+<div id="reader" style="width:300px;"></div>
+
+<!-- BOTONES -->
+<button onclick="iniciarScanner()">📷 Escanear QR</button>
+
+</body>
+
+<script src="app.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</html>

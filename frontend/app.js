@@ -1,4 +1,4 @@
-const API = "PEGA_AQUI_TU_URL_DE_APPS_SCRIPT";
+const API = "https://script.google.com/macros/s/AKfycbwk2vfoODT9dD6VG5sYWZW8jtucAsQAVKRhmiyT0Wm26rb_mGJE9m1C0BwC7lL7lyCghg/exec";
 
 let scanner;
 
